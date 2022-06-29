@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 1595px;
+	padding: 10px;
+}
+
+.title {
+	margin-top: 100px;
+}
+
+.spoilers {
+	margin-top: 80px;
+}
+
+.spoiler {
+	border-top: 1px solid #E6E6E6;
+	position: relative;
+}
+
+.spoiler:last-child {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.spoiler__title {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 120%;
+	color: #012B34;
+	margin: 30px 50px 30px 0;
+	cursor: pointer;
+}
+
+
+.spoiler.active .spoiler__title {
+	color: #02818A;
+}
+
+.spoiler::after, .spoiler::before {
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #02818A;;
+	position: absolute;
+	top: 48px;
+	right: 0;
+}
+
+.spoiler::after {
+	transform: rotate(90deg);
+}
+
+.spoiler.active::after{
+	transform: rotate(45deg);
+}
+
+.spoiler.active::before {
+	transform: rotate(-45deg);
+}
+
+.spoiler__body {
+	display: none;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #000402;
+	opacity: 0.8;
+	padding-bottom: 40px;
+}
+
+.spoiler.active .spoiler__body {
+	display: block;
+}
+
+/* #####################  MEDIA 1440 */
+
+@media (max-width: 1440px) {
+	.container {
+		width: 1200px;
+	}
+	.title {
+		margin-top: 80px;
+		font-size: 48px;
+	}
+	.spoilers {
+		margin-top: 60px;
+	}
+	.spoiler::after, .spoiler::before {
+		content: '';
+		top: 42px;
+		right: 0;
+	}
+	.spoiler__title {
+		font-size: 27px;
+		margin: 24px 50px 20px 0;
+	}
+	.spoiler__body {
+		font-size: 15px;
+		padding-bottom: 30px;
+	}
+}
+
+/* #####################  MEDIA 1280 */
+
+@media (max-width: 1280px) {
+	.container {
+		width: 1080px;
+	}
+	.title {
+		margin-top: 70px;
+		font-size: 42px;
+	}
+	.spoilers {
+		margin-top: 56px;
+	}
+	.spoiler::after, .spoiler::before {
+		content: '';
+		top: 38px;
+		right: 0;
+	}
+	.spoiler__title {
+		font-size: 24px;
+		margin: 20px 50px 16px 0;
+	}
+	.spoiler__body {
+		font-size: 14px;
+		padding-bottom: 24px;
+	}
+}
+
+/* #####################  MEDIA 768 */
+
+@media (max-width: 768px) {
+	.container {
+		width: 698px;
+	}
+	.title {
+		margin-top: 60px;
+		font-size: 42px;
+	}
+	.spoilers {
+		margin-top: 50px;
+	}
+	.spoiler::after, .spoiler::before {
+		content: '';
+		top: 42px;
+		right: 0;
+	}
+	.spoiler__title {
+		font-size: 27px;
+		margin: 24px 50px 16px 0;
+	}
+	.spoiler__body {
+		font-size: 15px;
+		padding-bottom: 24px;
+	}
+}
+
+/* #####################  MEDIA 375 */
+
+@media (max-width: 375px) {
+	.container {
+		width: 345px;
+	}
+	.title {
+		margin-top: 60px;
+		font-size: 30px;
+	}
+	.spoilers {
+		margin-top: 40px;
+	}
+	.spoiler::after, .spoiler::before {
+		content: '';
+		top: 38px;
+		right: 0;
+	}
+	.spoiler__title {
+		font-size: 24px;
+		margin: 20px 50px 16px 0;
+	}
+	.spoiler__body {
+		font-size: 15px;
+		padding-bottom: 20px;
+	}
+}
