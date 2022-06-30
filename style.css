@@ -8,11 +8,13 @@
 body {
 	display: flex;
 	justify-content: center;
+	font-family: Roboto, sans-serif;
 }
 
 .container {
 	width: 1595px;
 	padding: 10px;
+	margin: 0 150px;
 }
 
 .title {
@@ -105,6 +107,7 @@ body {
 @media (max-width: 1440px) {
 	.container {
 		width: 1200px;
+		margin: 0 110px;
 	}
 	.title {
 		margin-top: 80px;
@@ -142,6 +145,7 @@ body {
 @media (max-width: 1280px) {
 	.container {
 		width: 1080px;
+		margin: 0 80px;
 	}
 	.title {
 		margin-top: 70px;
@@ -179,6 +183,7 @@ body {
 @media (max-width: 768px) {
 	.container {
 		width: 698px;
+		margin: 0 30px;
 	}
 	.title {
 		margin-top: 60px;
@@ -219,6 +224,7 @@ body {
 @media (max-width: 376px) {
 	.container {
 		width: 345px;
+		margin: 0 14px;
 	}
 	.title {
 		margin-top: 60px;
